@@ -16,7 +16,7 @@
        specific language governing permissions and limitations
        under the License.
 */
-package com.collectme.cordova.diagnostic;
+package com.collectme.cordova.calgeolocation;
 
 import java.util.TimeZone;
 
@@ -40,13 +40,13 @@ import android.location.LocationManager;
 import android.location.LocationListener;
 import android.net.wifi.WifiManager;
 
-public class Diagnostic extends CordovaPlugin {
-    public static final String TAG = "Diagnostic";
+public class CalGeolocation extends CordovaPlugin {
+    public static final String TAG = "CalGeolocation";
 
     /**
      * Constructor.
      */
-    public Diagnostic() {
+    public CalGeolocation() {
     }
 
     /**

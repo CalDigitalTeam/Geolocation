@@ -1,18 +1,18 @@
 //
-//  Diagnostic.m
-//  Plugin diagnostic
+//  CalGeolocation.m
+//  Plugin CalGeolocation
 //
 //  Copyright (c) 2012 AVANTIC ESTUDIO DE INGENIEROS
 //
 
-#import "Diagnostic.h"
+#import "CalGeolocation.h"
 #import <CoreLocation/CoreLocation.h>
 
 #import <arpa/inet.h> // For AF_INET, etc.
 #import <ifaddrs.h> // For getifaddrs()
 #import <net/if.h> // For IFF_LOOPBACK
 
-@implementation Diagnostic
+@implementation CalGeolocation
 
 
 - (void) isLocationEnabled: (CDVInvokedUrlCommand*)command

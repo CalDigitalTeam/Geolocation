@@ -6,7 +6,7 @@
 **/
 
 
-var Diagnostic = function() {
+var CalGeolocation = function() {
 };
 
 /**
@@ -18,10 +18,10 @@ var Diagnostic = function() {
  * 							This callback function have a string param with the error.
  */
 
-Diagnostic.prototype.isLocationEnabled = function(successCallback, errorCallback) {
+CalGeolocation.prototype.isLocationEnabled = function(successCallback, errorCallback) {
 	return cordova.exec(successCallback,
 						errorCallback,
-						'Diagnostic',
+						'CalGeolocation',
 						'isLocationEnabled',
 						[]);
 };
@@ -35,18 +35,18 @@ Diagnostic.prototype.isLocationEnabled = function(successCallback, errorCallback
  * 							This callback function have a string param with the error.
  */
 
-Diagnostic.prototype.isLocationEnabledSetting = function(successCallback, errorCallback) {
+CalGeolocation.prototype.isLocationEnabledSetting = function(successCallback, errorCallback) {
 	return cordova.exec(successCallback,
 						errorCallback,
-						'Diagnostic',
+						'CalGeolocation',
 						'isLocationEnabledSetting',
 						[]);
 };
 
-Diagnostic.prototype.switchToLocationSettings = function() {
+CalGeolocation.prototype.switchToLocationSettings = function() {
 	return cordova.exec(null,
 						null,
-						'Diagnostic',
+						'CalGeolocation',
 						'switchToLocationSettings',
 						[]);
 };
@@ -61,10 +61,10 @@ Diagnostic.prototype.switchToLocationSettings = function() {
  * 							This callback function have a string param with the error.
  */
 
-Diagnostic.prototype.isLocationAuthorized = function(successCallback, errorCallback) {
+CalGeolocation.prototype.isLocationAuthorized = function(successCallback, errorCallback) {
 	return cordova.exec(successCallback,
 						errorCallback,
-						'Diagnostic',
+						'CalGeolocation',
 						'isLocationAuthorized',
 						[]);
 };
@@ -78,10 +78,10 @@ Diagnostic.prototype.isLocationAuthorized = function(successCallback, errorCallb
  * 							This callback function have a string param with the error.
  */
 
-Diagnostic.prototype.isWifiEnabled = function(successCallback, errorCallback) {
+CalGeolocation.prototype.isWifiEnabled = function(successCallback, errorCallback) {
 	return cordova.exec(successCallback,
 						errorCallback,
-						'Diagnostic',
+						'CalGeolocation',
 						'isWifiEnabled',
 						[]);
 };
@@ -96,18 +96,13 @@ Diagnostic.prototype.isWifiEnabled = function(successCallback, errorCallback) {
  */
 
 
-Diagnostic.prototype.isCameraEnabled = function(successCallback, errorCallback) {
+CalGeolocation.prototype.isCameraEnabled = function(successCallback, errorCallback) {
 	return cordova.exec(successCallback,
 						errorCallback,
-						'Diagnostic',
+						'CalGeolocation',
 						'isCameraEnabled',
 						[]);
 };
 
-module.exports = new Diagnostic();
+module.exports = new CalGeolocation();
 
-// cordova.addConstructor(function() {
-// 	if(!window.plugins)
-// 		window.plugins = {};
-// 	window.plugins.diagnostic = new Diagnostic();
-// });

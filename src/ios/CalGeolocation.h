@@ -1,13 +1,13 @@
 //
-//  Diagnostic.h
-//  Plugin diagnostic
+//  CalGeolocation.h
+//  Plugin CalGeolocation
 //
 //  Copyright (c) 2012 AVANTIC ESTUDIO DE INGENIEROS
 //
 
 #import <Cordova/CDV.h>
 
-@interface Diagnostic : CDVPlugin
+@interface CalGeolocation : CDVPlugin
 
 - (void) isLocationEnabled: (CDVInvokedUrlCommand*)command;
 - (void) isLocationEnabledSetting: (CDVInvokedUrlCommand*)command;
