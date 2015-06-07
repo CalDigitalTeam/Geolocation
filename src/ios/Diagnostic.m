@@ -90,10 +90,7 @@
 - (BOOL) isLocationAuthorized
 {
 
-    CLAuthorizationStatus authStatus = [CLLocationManager  authorizationStatus];
-    if(authStatus == kCLAuthorizationStatusAuthorizedAlways ||
-       authStatus == kCLAuthorizationStatusAuthorizedWhenInUse ||
-       authStatus == kCLAuthorizationStatusAuthorized) {
+    if([CLLocationManager  authorizationStatus] != kCLAuthorizationStatusDenied) {
         NSLog(@"This app is authorized to use location.");
         return true;
     } else {
